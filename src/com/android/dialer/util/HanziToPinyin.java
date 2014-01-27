@@ -75,15 +75,11 @@ public class HanziToPinyin {
             String[] pingyinArray = Exchange(pinyinTemp);
             String[] firstArray = Exchange(firstTemp);
             Set<String> pinyinSet = new HashSet<String>();
-            if(pingyinArray != null) {
-                for (int i = 0; i < pingyinArray.length; i++) {
-                    pinyinSet.add(pingyinArray[i]);
-                }
+            for (int i = 0; i < pingyinArray.length; i++) {
+                pinyinSet.add(pingyinArray[i]);
             }
-            if(firstArray != null) {
-                for (int i = 0; i < firstArray.length; i++) {
-                    pinyinSet.add(firstArray[i]);
-                }
+            for (int i = 0; i < firstArray.length; i++) {
+                pinyinSet.add(firstArray[i]);
             }
             return pinyinSet;
         }
